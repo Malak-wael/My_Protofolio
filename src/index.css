@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* السطر ده هو اللي هيخلي التيلويند يقرأ كلاس dark من الـ Context */
+@variant dark (&:where(.dark, .dark *));
+
+
+
+@theme {
+  --color-burgundy-dark: #120307;
+  --color-burgundy-main: #3A0813;
+  --color-burgundy-light: #5C1322;
+  --color-neon-pink: #FF2E93;
+  --color-neon-gold: #D4AF37;
+}
+
+/* أنيميشن الدوران */
+@keyframes orbit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-orbit {
+  animation: orbit-spin 45s linear infinite;
+}
+
+.reverse-animation {
+  animation-direction: reverse !important;
+}
+
+/* توزيع الـ 11 أيقونة على المدار بشكل إجباري ومضمون */
+.skill-node:nth-child(1)  { transform: rotate(0deg) translate(130px) rotate(0deg); }
+.skill-node:nth-child(2)  { transform: rotate(32.7deg) translate(130px) rotate(-32.7deg); }
+.skill-node:nth-child(3)  { transform: rotate(65.4deg) translate(130px) rotate(-65.4deg); }
+.skill-node:nth-child(4)  { transform: rotate(98.1deg) translate(130px) rotate(-98.1deg); }
+.skill-node:nth-child(5)  { transform: rotate(130.8deg) translate(130px) rotate(-130.8deg); }
+.skill-node:nth-child(6)  { transform: rotate(163.5deg) translate(130px) rotate(-163.5deg); }
+.skill-node:nth-child(7)  { transform: rotate(196.2deg) translate(130px) rotate(-196.2deg); }
+.skill-node:nth-child(8)  { transform: rotate(228.9deg) translate(130px) rotate(-228.9deg); }
+.skill-node:nth-child(9)  { transform: rotate(261.6deg) translate(130px) rotate(-261.6deg); }
+.skill-node:nth-child(10) { transform: rotate(294.3deg) translate(130px) rotate(-294.3deg); }
+.skill-node:nth-child(11) { transform: rotate(327deg) translate(130px) rotate(-327deg); }
+
+/* للشاشات الكبيرة (md) نكبر المدار شوية */
+@media (min-width: 768px) {
+  .skill-node:nth-child(1)  { transform: rotate(0deg) translate(190px) rotate(0deg); }
+  .skill-node:nth-child(2)  { transform: rotate(32.7deg) translate(190px) rotate(-32.7deg); }
+  .skill-node:nth-child(3)  { transform: rotate(65.4deg) translate(190px) rotate(-65.4deg); }
+  .skill-node:nth-child(4)  { transform: rotate(98.1deg) translate(190px) rotate(-98.1deg); }
+  .skill-node:nth-child(5)  { transform: rotate(130.8deg) translate(190px) rotate(-130.8deg); }
+  .skill-node:nth-child(6)  { transform: rotate(163.5deg) translate(190px) rotate(-163.5deg); }
+  .skill-node:nth-child(7)  { transform: rotate(196.2deg) translate(190px) rotate(-196.2deg); }
+  .skill-node:nth-child(8)  { transform: rotate(228.9deg) translate(190px) rotate(-228.9deg); }
+  .skill-node:nth-child(9)  { transform: rotate(261.6deg) translate(190px) rotate(-261.6deg); }
+  .skill-node:nth-child(10) { transform: rotate(294.3deg) translate(190px) rotate(-294.3deg); }
+  .skill-node:nth-child(11) { transform: rotate(327deg) translate(190px) rotate(-327deg); }
+}
