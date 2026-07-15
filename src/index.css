@@ -1,6 +1,7 @@
 @import "tailwindcss";
-
-/* السطر ده هو اللي هيخلي التيلويند يقرأ كلاس dark من الـ Context */
+html {
+  scroll-behavior: smooth;
+}
 @variant dark (&:where(.dark, .dark *));
 
 
@@ -13,7 +14,6 @@
   --color-neon-gold: #D4AF37;
 }
 
-/* أنيميشن الدوران */
 @keyframes orbit-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -23,11 +23,12 @@
   animation: orbit-spin 45s linear infinite;
 }
 
+
+
 .reverse-animation {
   animation-direction: reverse !important;
 }
 
-/* توزيع الـ 11 أيقونة على المدار بشكل إجباري ومضمون */
 .skill-node:nth-child(1)  { transform: rotate(0deg) translate(130px) rotate(0deg); }
 .skill-node:nth-child(2)  { transform: rotate(32.7deg) translate(130px) rotate(-32.7deg); }
 .skill-node:nth-child(3)  { transform: rotate(65.4deg) translate(130px) rotate(-65.4deg); }
@@ -40,7 +41,6 @@
 .skill-node:nth-child(10) { transform: rotate(294.3deg) translate(130px) rotate(-294.3deg); }
 .skill-node:nth-child(11) { transform: rotate(327deg) translate(130px) rotate(-327deg); }
 
-/* للشاشات الكبيرة (md) نكبر المدار شوية */
 @media (min-width: 768px) {
   .skill-node:nth-child(1)  { transform: rotate(0deg) translate(190px) rotate(0deg); }
   .skill-node:nth-child(2)  { transform: rotate(32.7deg) translate(190px) rotate(-32.7deg); }
