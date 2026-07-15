@@ -15,9 +15,9 @@ export default function OrbitSkills() {
     <section id="skills" className="min-h-screen py-24 bg-[#FAF6F0] dark:bg-burgundy-dark text-slate-900 dark:text-white transition-colors duration-500 px-6 relative overflow-hidden">
       
       {/* Background Large Text */}
-      <div className="absolute top-10 left-1/2 -translate-x-1/2 select-none pointer-events-none opacity-[0.03] dark:opacity-5">
+      {/* <div className="absolute top-10 left-1/2 -translate-x-1/2 select-none pointer-events-none opacity-[0.03] dark:opacity-5">
         <h2 className="text-8xl md:text-9xl font-black font-mono tracking-widest text-burgundy-main dark:text-white">EXPERTISE</h2>
-      </div>
+      </div> */}
 
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         

@@ -38,9 +38,9 @@ export default function Contact() {
     <section id="contact" className="min-h-screen py-24 bg-[#FAF6F0] dark:bg-burgundy-dark text-slate-900 dark:text-white relative overflow-hidden flex items-center px-6 transition-colors duration-500">
 
       {/* Background Big Text */}
-      <div className="absolute left-10 bottom-10 select-none pointer-events-none opacity-[0.02] font-mono text-[10rem] font-black tracking-widest text-burgundy-main dark:text-white">
+      {/* <div className="absolute left-10 bottom-10 select-none pointer-events-none opacity-[0.02] font-mono text-[10rem] font-black tracking-widest text-burgundy-main dark:text-white">
         PING
-      </div>
+      </div> */}
 
       <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
 

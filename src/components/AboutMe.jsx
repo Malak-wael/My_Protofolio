@@ -12,9 +12,9 @@ export default function AboutMe() {
     >
       
       {/* Background Aesthetic */}
-      <div className="absolute -left-10 top-10 text-slate-900/[0.02] dark:text-white/[0.02] select-none pointer-events-none font-mono text-9xl font-black">
+      {/* <div className="absolute -left-10 top-10 text-slate-900/[0.02] dark:text-white/[0.02] select-none pointer-events-none font-mono text-9xl font-black">
         ABOUT
-      </div>
+      </div> */}
 
       <div className="max-w-4xl w-full flex flex-col items-center relative z-10">
         

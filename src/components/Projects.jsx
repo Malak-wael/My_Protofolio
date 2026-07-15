@@ -72,9 +72,9 @@ export default function Projects() {
     >
 
       {/* Background Cinematic Text */}
-      <div className="absolute right-5 top-1/4 select-none pointer-events-none opacity-[0.01] dark:opacity-[0.01] text-slate-900 dark:text-white font-mono text-[12rem] font-black tracking-tighter">
+      {/* <div className="absolute right-5 top-1/4 select-none pointer-events-none opacity-[0.01] dark:opacity-[0.01] text-slate-900 dark:text-white font-mono text-[12rem] font-black tracking-tighter">
         PORTFOLIO
-      </div>
+      </div> */}
 
       <div className="max-w-6xl mx-auto relative z-10">
 
