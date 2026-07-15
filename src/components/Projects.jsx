@@ -56,11 +56,11 @@ const projectsData = [
     live: "https://malak-wael.github.io/EL-hootMoter-FrontEnd-Project-/"
   },
   {
-    id: 6, // أو الترتيب اللي بعد مشاريعك
+    id: 6, 
     name: "MediCore / Hospital Management System",
     desc: "Collaborative enterprise ecosystem engineered for live patient routing, real-time staff scheduling, and secure medical records warehousing.",
     tech: ["Laravel", "React", "MySQL", "Tailwind"],
-    isComingSoon: true // 💡 التريك هنا: هنعلم الكارت ده بالـ Flag ده
+    isComingSoon: true 
   }
 ];
 
@@ -90,7 +90,6 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projectsData.map((project) => {
 
-            // ================= 👇 1. ديزاين كارت الـ Coming Soon (مشروع المستشفى) 👇 =================
             if (project.isComingSoon) {
               return (
                 <motion.div
@@ -107,7 +106,6 @@ export default function Projects() {
                   transition={{ type: "spring", stiffness: 250, damping: 22 }}
                   className="border-2 border-dashed border-slate-300 dark:border-white/10 rounded-3xl overflow-hidden backdrop-blur-sm flex flex-col group relative h-[460px] bg-white/30 dark:bg-burgundy-main/5 select-none"
                 >
-                  {/* مكان الصورة المفرغ */}
                   <div className="h-[200px] w-full flex items-center justify-center relative border-b border-dashed border-slate-300 dark:border-white/10 bg-slate-100/50 dark:bg-burgundy-dark/20">
                     <div className="absolute inset-0 bg-gradient-to-t from-white/30 dark:from-burgundy-dark/30 via-transparent to-transparent opacity-60" />
                     <span className="text-5xl opacity-4xl filter grayscale group-hover:scale-110 transition-transform duration-500">🛠️</span>
@@ -133,7 +131,6 @@ export default function Projects() {
 
                     {/* Tags Section */}
                     <div>
-                      {/* 💡 التعديل هنا: استخدام ?.map لحماية الكود من الـ undefined */}
                       <div className="flex flex-wrap gap-2 pt-4 border-t border-dashed border-slate-200 dark:border-white/10 opacity-50">
                         {project.tags?.map((tag, i) => (
                           <span
@@ -156,7 +153,6 @@ export default function Projects() {
               );
             }
 
-            // ================= 👇 2. كروت المشاريع الـ 5 المكتملة 👇 =================
             return (
               <motion.div
                 key={project.id}
@@ -210,7 +206,6 @@ export default function Projects() {
                   </div>
 
                   {/* Tags Section */}
-                  {/* 💡 التعديل هنا أيضاً: استخدام ?.map لحماية الكود */}
                   <div className="mt-4 flex flex-wrap gap-2 pt-4 border-t border-slate-200 dark:border-burgundy-light/10">
                     {project.tags?.map((tag, i) => (
                       <span
