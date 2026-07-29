@@ -49,11 +49,11 @@ const projectsData = [
   }, {
     id: 5,
     title: "El-Hoot Motors",
-    desc: "A highly responsive and interactive automotive showcase platform designed for a premier motorcycle and vehicle dealership. Crafted with semantic structure, smooth custom CSS animations, and vanilla JavaScript for dynamic vehicle sorting and immersive product galleries.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    desc: "A production-ready, full-stack automotive marketplace engineered collaboratively with a team. Transitioned into a scalable React.js architecture featuring dynamic vehicle cataloging, real-time filtering, responsive media galleries, and seamless state management designed for high-traffic scalability.",  
+    tags: ["React", "Tailwind CSS", "JavaScript", "REST API", "Team Project"],
     image: ELhoot_Motors,
-    github: "https://github.com/Malak-wael/EL-hootMoter-FrontEnd-Project-.git",
-    live: "https://malak-wael.github.io/EL-hootMoter-FrontEnd-Project-/"
+    github: "https://github.com/Malak-wael/EL-hootMoter_Project.git",
+    live: "#"
   },
   {
     id: 6, 
