@@ -24,7 +24,6 @@ export default function App() {
 
   return (
     <>
-      {/* 1. تأثير الـ Preloader العبقري أول ما الويب يفتح */}
       <AnimatePresence mode="wait">
         {isLoading && (
           <Preloader key="preloader" onComplete={() => setIsLoading(false)} isDarkMode={isDarkMode} />
@@ -74,7 +73,7 @@ export default function App() {
                     🚀 Full-Stack Developer
                   </span>
                   <span className="text-[10px] md:text-xs font-mono tracking-widest uppercase px-3 py-1.5 rounded-full bg-white/50 dark:bg-burgundy-main/40 border border-slate-200 dark:border-neon-gold/30 text-burgundy-main dark:text-neon-gold shadow-sm backdrop-blur-sm">
-                    🎓 WE School Student
+                    🎓 Cmputers and AI student
                   </span>
                 </motion.div>
   
@@ -117,8 +116,8 @@ export default function App() {
                   </a>
   
                   <a
-                    href="/Malak_Wael_CV.pdf" 
-                    download="Malak_Wael_FullStack_CV.pdf" 
+                    href="/Malak_Wael_Abdelrahim_CV.pdf" 
+                    download="Malak_Wael_Abdelrahim_CV" 
                     className="w-full sm:w-auto px-6 py-4 rounded-xl bg-white/40 dark:bg-burgundy-main/20 text-burgundy-main dark:text-neon-gold border border-burgundy-light/30 dark:border-neon-gold/30 font-mono text-xs uppercase tracking-widest font-bold shadow-sm transition-all duration-300 transform hover:-translate-y-1 text-center cursor-pointer backdrop-blur-sm hover:bg-neon-gold hover:text-slate-900 dark:hover:bg-neon-gold dark:hover:text-slate-900 hover:shadow-[0_0_25px_rgba(255,215,0,0.4)] flex items-center justify-center gap-2"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
